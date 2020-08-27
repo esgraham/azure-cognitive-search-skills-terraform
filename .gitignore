@@ -361,3 +361,6 @@ api.zip
 # Terraform
 .terraform
 terraform.tfstate*
+
+
+.vscode/*

@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognitiveSkills.Functions", "CognitiveSkills.Functions\CognitiveSkills.Functions.csproj", "{3303ECB3-7437-4ED4-A896-14D144F28EDF}"
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CognitiveSkills.Functions", "CognitiveSkills.Functions\CognitiveSkills.Functions.csproj", "{3303ECB3-7437-4ED4-A896-14D144F28EDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CognitiveSkills.Functions.Tests", "CognitiveSkills.Functions.Tests\CognitiveSkills.Functions.Tests.csproj", "{DF26CD1F-2371-44F7-A11F-93F0C12F88C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{3303ECB3-7437-4ED4-A896-14D144F28EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3303ECB3-7437-4ED4-A896-14D144F28EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3303ECB3-7437-4ED4-A896-14D144F28EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF26CD1F-2371-44F7-A11F-93F0C12F88C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF26CD1F-2371-44F7-A11F-93F0C12F88C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF26CD1F-2371-44F7-A11F-93F0C12F88C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF26CD1F-2371-44F7-A11F-93F0C12F88C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56656CD8-2C2A-49B1-89AF-05102F0A2B78}
 	EndGlobalSection
 EndGlobal

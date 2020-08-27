@@ -14,12 +14,20 @@ namespace CognitiveSkills.Functions
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
-    internal static class CustomSkill
+    /// <summary>
+    /// Custom Skill to be used with Azure Search.  Takes the text value in the search results and reverses the text.
+    /// </summary>
+    public static class CustomSkill
     {
+        /// <summary>
+        /// The method that runs the HTTP Triggered function.
+        /// </summary>
+        /// <param name="req">The HTTP Requst from the trigger.</param>
+        /// <returns>Returns a Json Object.</returns>
         [FunctionName(nameof(CustomSkill))]
         public static async Task<ActionResult<JObject>> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req)
-        {
+            {
             if (req == null)
             {
                 throw new ArgumentNullException(nameof(req));
