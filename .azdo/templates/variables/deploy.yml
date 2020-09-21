@@ -4,7 +4,7 @@ parameters:
 variables:
   deploy.terraform.backendAzureRmResourceGroupLocation: eastus
   deploy.terraform.backendAzureRmResourceGroupName: rg-vi-search-trfrm
-  deploy.terraform.backendAzureRmStorageAccountName: stvisearchtrfrm
+  deploy.terraform.backendAzureRmStorageAccountName: stvisearchtrfrm$RANDOM
   deploy.terraform.backendAzureRmContainerName: tfstate
   deploy.terraform.tfVarsFile: terraform.tfvars
 

@@ -41,12 +41,15 @@ namespace CognitiveSkills.Functions.Tests
         {
             var json = JsonConvert.SerializeObject(values);
 
-            var context = new DefaultHttpContext();
-            var request = context.Request;
-            request.Method = "Post";
-            request.Body = GenerateStreamFromString(json);
+            DefaultHttpContext defaultHttpContext = new DefaultHttpContext
+            {
+                Request = {
+                Method = "POST",
+                Body = GenerateStreamFromString(json),
+                }  
+            };
 
-            return request;
+            return defaultHttpContext.Request;
         }
 
         private static MemoryStream GenerateStreamFromString(string value)
