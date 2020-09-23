@@ -21,6 +21,13 @@ jobs:
       publishWebProjects: False
       arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
       zipAfterPublish: True
+   
+# Visual Studio test platform installer
+- task: VisualStudioTestPlatformInstaller@1
+  displayName: Install Visual Studio Test Platform
+  inputs:
+    packageFeedSelector: 'nugetOrg' 
+    versionSelector: 'latestStable'
 
   - task: VSTest@2
     displayName: Unit Test Azure Function package
