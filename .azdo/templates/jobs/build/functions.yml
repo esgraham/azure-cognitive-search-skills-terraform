@@ -26,9 +26,7 @@ jobs:
     displayName: Unit Test Azure Function package
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: |
-      **\*tests*.dll
-      !**\obj\**
+      testAssemblyVer2: '**\*Tests*.dll;!**\obj\**'
       searchFolder: '$(Build.SourcesDirectory)/src/CognitiveSkills.Functions.Tests'
 
   - task: PublishBuildArtifacts@1
