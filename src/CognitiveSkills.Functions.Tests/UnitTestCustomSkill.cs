@@ -24,7 +24,7 @@ namespace CognitiveSkills.Functions.Tests
             var values = TestFactory.CreateValues();
             var request = TestFactory.CreateHttpRequest(values);
             var response = (ActionResult<JObject>)await CustomSkill.Run(request).ConfigureAwait(false);
-            Assert.Equal("seT", response.Value["values"][0]["data"]["reversedText"]);
+            Assert.Equal("tseT", response.Value["values"][0]["data"]["reversedText"]);
         }
 
         /// <summary>
